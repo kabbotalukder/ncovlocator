@@ -172,12 +172,3 @@ span{
 
   }
 }
-
-@media only screen and (max-width: 1920px) {
-  .main{
-    left: 40%;
-    top: 82%;
-    /* transform: translate(-50%,-50%); */
-
-  }
-}
