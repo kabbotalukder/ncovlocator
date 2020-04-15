@@ -1,6 +1,6 @@
 var nation = 
     {    
-        'active' : 1230,
+        'active' : 1231,
         'death' : 50,
         'recovered' : 49,  
     }
