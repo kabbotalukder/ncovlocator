@@ -157,6 +157,13 @@ span{
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .main{
+    top: 80%;
+    /* transform: translate(-50%,-50%); */
+
+  }
+}
 
 @media only screen and (max-width: 1366px) {
   .main{
@@ -166,9 +173,10 @@ span{
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1920px) {
   .main{
-    top: 80%;
+    left: 40%;
+    top: 82%;
     /* transform: translate(-50%,-50%); */
 
   }
