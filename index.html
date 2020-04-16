@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <title>COVID-19 Locator | Bangladesh</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" href="assets/image/icon.ico">
-    <style>
-        img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
-            display: none;
-            }
-    </style>
-    <meta name="description" content="Covid-19 Locator is an Online Application based on Google Map which locates Covid-19 cases across Bangladesh.Developed by Kabbo Talukder & Managed by Parizat Partha">
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/covid-tracker.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <script src="https://kit.fontawesome.com/c939d0e917.js"></script> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COVID-19 Locator | Bangladesh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" href="assets/image/icon.ico">
+<meta name="description" content="Covid-19 Locator is an Online Application based on Google Map which locates Covid-19 cases across Bangladesh.Developed by Kabbo Talukder & Managed by Parizat Partha">
+<script src="assets/js/data.js"></script>
+<script src="assets/js/covid-tracker.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
-    <div class="main">
-        <div class="second-one">
-            <div class="block">
-                <span class="block1">Cases</span>
-                <span class="block2" id="cases"></span>
-            </div>
-            <div class="block">
-                <span class="block1">Death</span>
-                <span class="block2" id="death"></span>
-            </div>
-            <div class="block">
-                <span class="block1">Recovered</span>
-                <span class="block2" id="recovered"></span>
-            </div>
+<div class="main">
+    <div class="second-zero">
+        <span>Last Updated :</span>  <span class="updater" id="update"></span>
+    </div>
+    <div class="second-one">
+        <div class="block">
+            <span class="block1">Cases</span>
+            <span class="block1" id="cases"></span>
         </div>
-        <div class="second-two">
-            Source : WHO | IEDCR
+        <div class="block">
+            <span class="block1">Death</span>
+            <span class="block1" id="death"></span>
         </div>
-        <div class="second-three">
-            Design & Development : Kabbo Talukder </br> Management : Parizat Partha
+        <div class="block">
+            <span class="block1">Recovered</span>
+            <span class="block1" id="recovered"></span>
         </div>
     </div>
+    <div class="second-two">
+        Source : WHO | IEDCR | WORLDOMETER
+    </div>
+    <div class="second-three">
+        Design & Development : Kabbo Talukder </br> Management : Parizat Partha
+    </div>
+</div>
 
 
-    <div id="map"></div>
+<div id="map"></div>
 
-    
+
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyijoyQ2uwlH2YccHq_4-JTkyG8lNXfY8&callback=initMap">
 </script>
