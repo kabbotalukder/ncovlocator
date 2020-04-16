@@ -159,6 +159,16 @@ var districts = [
             'longitude': 92.0058
         }
     },
+    {
+        'name': 'Noakhali',
+        'cases':{
+            'total_cases': 2
+        },
+        'coordinates': {
+            'latitude': 22.8724,
+            'longitude': 91.0973
+        }
+    },
 {
         'name': 'Comilla',
         'cases':{
