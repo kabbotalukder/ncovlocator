@@ -11,7 +11,7 @@ var districts = [
 {
         'name': 'Dhaka',
         'cases':{
-            'total_cases': 546
+            'total_cases': 636
         },
         'coordinates': {
             'latitude': 23.8103 ,
@@ -22,7 +22,7 @@ var districts = [
     {
         'name': 'Gazipur',
         'cases':{
-            'total_cases': 53
+            'total_cases': 98
         },
         'coordinates': {
             'latitude': 23.9999 ,
@@ -32,7 +32,7 @@ var districts = [
 {
         'name': 'Kishoreganj',
         'cases':{
-            'total_cases': 17
+            'total_cases': 33
         },
         'coordinates': {
             'latitude': 24.4260,
@@ -42,7 +42,7 @@ var districts = [
 {
         'name': 'Madaripur',
         'cases':{
-            'total_cases': 19
+            'total_cases': 23
         },
         'coordinates': {
             'latitude': 23.2393 ,
@@ -62,7 +62,7 @@ var districts = [
 {
         'name': 'Narayanganj',
         'cases':{
-            'total_cases': 214
+            'total_cases': 255
         },
         'coordinates': {
             'latitude': 23.6238 ,
@@ -72,7 +72,7 @@ var districts = [
 {
         'name': 'Munshigonj',
         'cases':{
-            'total_cases': 21
+            'total_cases': 26
         },
         'coordinates': {
             'latitude': 23.4981 ,
@@ -82,7 +82,7 @@ var districts = [
 {
         'name': 'Narsingdi',
         'cases':{
-            'total_cases': 28
+            'total_cases': 64
         },
         'coordinates': {
             'latitude': 24.1344 ,
@@ -92,7 +92,7 @@ var districts = [
 {
         'name': 'Rajbari',
         'cases':{
-            'total_cases': 6
+            'total_cases': 7
         },
         'coordinates': {
             'latitude': 23.7639 ,
@@ -122,7 +122,7 @@ var districts = [
 {
         'name': 'Shariatpur',
         'cases':{
-            'total_cases': 5
+            'total_cases': 6
         },
         'coordinates': {
             'latitude': 23.2423 ,
@@ -132,7 +132,7 @@ var districts = [
 {
         'name': 'Gopalganj',
         'cases':{
-            'total_cases': 9
+            'total_cases': 17
         },
         'coordinates': {
             'latitude': 23.0488 ,
@@ -142,7 +142,7 @@ var districts = [
  {
         'name': 'Chattogram',
         'cases':{
-            'total_cases': 31
+            'total_cases': 36
         },
         'coordinates': {
             'latitude': 22.3569 ,
@@ -192,7 +192,7 @@ var districts = [
 {
         'name': 'Chandpur',
         'cases':{
-            'total_cases':6
+            'total_cases':7
         },
         'coordinates': {
             'latitude': 23.2321,
@@ -202,7 +202,7 @@ var districts = [
  {
         'name': 'Sylhet',
         'cases':{
-            'total_cases': 1
+            'total_cases': 3
         },
         'coordinates': {
             'latitude': 24.8949 ,
@@ -242,7 +242,7 @@ var districts = [
     {
         'name': 'Rangpur',
         'cases':{
-            'total_cases': 2
+            'total_cases': 3
         },
         'coordinates': {
             'latitude': 25.7439 ,
@@ -292,7 +292,7 @@ var districts = [
     {
         'name': 'Dinajpur',
         'cases':{
-            'total_cases': 7
+            'total_cases': 8
         },
         'coordinates': {
             'latitude': 25.6249 ,
@@ -342,7 +342,7 @@ var districts = [
     {
         'name': 'Mymensingh',
         'cases':{
-            'total_cases': 7
+            'total_cases': 9
         },
         'coordinates': {
             'latitude': 24.7471 ,
@@ -362,7 +362,7 @@ var districts = [
 {
         'name': 'Netrokona',
         'cases':{
-            'total_cases': 4
+            'total_cases': 6
         },
         'coordinates': {
             'latitude': 24.8103 ,
@@ -372,7 +372,7 @@ var districts = [
 {
         'name': 'Sherpur',
         'cases':{
-            'total_cases': 3
+            'total_cases': 5
         },
         'coordinates': {
             'latitude': 25.0194 ,
@@ -382,7 +382,7 @@ var districts = [
     {
         'name': 'Barisal',
         'cases':{
-            'total_cases': 10
+            'total_cases': 12
         },
         'coordinates': {
             'latitude': 22.7010 ,
@@ -432,7 +432,7 @@ var districts = [
     {
         'name': 'Rajshahi',
         'cases':{
-            'total_cases': 4
+            'total_cases': 3
         },
         'coordinates': {
             'latitude': 24.3745 ,
