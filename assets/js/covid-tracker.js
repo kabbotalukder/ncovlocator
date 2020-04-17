@@ -14,7 +14,6 @@ west: 85.07727182551838,
 };
 
 function initMap() {
-// var location = {lat: 23.6850, lng: 90.3563};
 var location = {lat: 23.221057, lng: 90.425433}
 map = new google.maps.Map(document.getElementById('map'), {
 center: location,
@@ -62,7 +61,6 @@ map.fitBounds(bounds);
 function createMarker(latlng, name, total_cases){
 
 var html = "<b>" + name + '</b> </br>Number of Cases : ' + total_cases  ;
-// var scale = Math.round(i.cases / totalCases * 100) + 5
   var marker = new google.maps.Marker({
     map: map,
     position: latlng,
