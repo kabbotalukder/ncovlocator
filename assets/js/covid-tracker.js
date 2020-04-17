@@ -64,15 +64,6 @@ var html = "<b>" + name + '</b> </br>Number of Cases : ' + total_cases  ;
   var marker = new google.maps.Marker({
     map: map,
     position: latlng,
-    icon: {
-      path: google.maps.SymbolPath.CIRCLE,
-      fillColor: '#c92b2a',
-      fillOpacity: 1,
-      scale: 14,
-      strokeColor: 'white',
-      strokeOpacity: 1,
-      strokeWeight: 1,
-    },
     animation: google.maps.Animation.DROP,
     label : total_cases.toString()
   });
