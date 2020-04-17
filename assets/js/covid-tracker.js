@@ -6,12 +6,6 @@ var map;
 var markers = [];
 var infoWindow;
 var locationSelect;
-var main_bound = {
-north: 27.323224,
-south: 20.305724,
-west: 23.927181,
-east: 23.850464,
-};
 
 function initMap() {
 var location = {lat: 23.6850, lng: 90.3563};
@@ -19,10 +13,6 @@ map = new google.maps.Map(document.getElementById('map'), {
   center: location,
   zoom: 11,
   disableDefaultUI: true,
-  restriction: {
-    latLngBounds: main_bound,
-    strictBounds: false,
-  },
 });
 infoWindow = new google.maps.InfoWindow();
 showStoresMarkers();
