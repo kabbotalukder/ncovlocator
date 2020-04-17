@@ -134,8 +134,19 @@ padding-top: 8px;
 text-align : center;
 }
 
+@media (min-width: 0px) and (max-width: 320px) {
+.main{
+width: 315px;
+height: 137px;
+left: 1%;
+top: 73%;
+}
+.block1{
+padding: 12px 0px 0px 0px;
+}
+}
 
-@media (min-width: 0px) and (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 375px) {
 .main{
 width: 315px;
 height: 137px;
