@@ -6,59 +6,83 @@ var map;
 var markers = [];
 var infoWindow;
 var locationSelect;
+var main_bound = {
+north: 27.323224,
+south: 20.305724,
+west: 23.927181,
+east: 23.850464,
+};
 
 function initMap() {
-  var location = {lat: 23.6850, lng: 90.3563};
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: location,
-    zoom: 11,
-  });
-  infoWindow = new google.maps.InfoWindow();
-  showStoresMarkers();
+var location = {lat: 23.6850, lng: 90.3563};
+map = new google.maps.Map(document.getElementById('map'), {
+  center: location,
+  zoom: 11,
+  disableDefaultUI: true,
+  restriction: {
+    latLngBounds: main_bound,
+    strictBounds: false,
+  },
+});
+infoWindow = new google.maps.InfoWindow();
+showStoresMarkers();
 }
 
 function displayData(){
-  var update_time = nation['update'];
-  var total_cases = nation['active'];
-  var total_death = nation['death'];
-  var total_recovered = nation['recovered'];
+var update_time = nation['update'];
+var total_cases = nation['active'];
+var total_death = nation['death'];
+var total_recovered = nation['recovered'];
 
-  document.getElementById('update').innerHTML = update_time;
-  document.getElementById('cases').innerHTML = total_cases;
-  document.getElementById('death').innerHTML = total_death;
-  document.getElementById('recovered').innerHTML = total_recovered;
+document.getElementById('update').innerHTML = update_time;
+document.getElementById('cases').innerHTML = total_cases;
+document.getElementById('death').innerHTML = total_death;
+document.getElementById('recovered').innerHTML = total_recovered;
 
 }
 
 function showStoresMarkers(){
-  var bounds = new google.maps.LatLngBounds();
-  for(var [index , district] of districts.entries()){
+var bounds = new google.maps.LatLngBounds();
+for(var [index , district] of districts.entries()){
 
-    var latlng = new google.maps.LatLng(
-      district['coordinates']['latitude'],
-      district['coordinates']['longitude']
-      );
+  var latlng = new google.maps.LatLng(
+    district['coordinates']['latitude'],
+    district['coordinates']['longitude']
+    );
 
-    var name = district['name'];
-    var total_cases = district['cases']['total_cases'];
-    bounds.extend(latlng);
-    createMarker(latlng, name,total_cases, index);
-    }
-    map.fitBounds(bounds);
+  var name = district['name'];
+  var total_cases = district['cases']['total_cases'];
+  bounds.extend(latlng);
+  createMarker(latlng, name,total_cases, index);
+  }
+  map.fitBounds(bounds);
 }
 
 function createMarker(latlng, name, total_cases){
 
-  var html = "<b>" + name + '</b> </br>Number of Cases : ' + total_cases  ;
-          var marker = new google.maps.Marker({
-            map: map,
-            position: latlng,
-            label : total_cases.toString()
-          });
-          google.maps.event.addListener(marker, 'click', function() {
-            infoWindow.setContent(html);
-            infoWindow.open(map, marker, total_cases);
-          });
-          markers.push(marker);
+var html = "<b>" + name + '</b> </br>Number of Cases : ' + total_cases  ;
+// var scale = Math.round(i.cases / totalCases * 100) + 5
+      var marker = new google.maps.Marker({
+        map: map,
+        position: latlng,
+        //new
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          fillColor: '#c92b2a',
+          fillOpacity: 1,
+          scale: 14,
+          strokeColor: 'white',
+          strokeOpacity: 1,
+          strokeWeight: 1,
+        },
+        animation: google.maps.Animation.DROP,
+        //new end
+        label : total_cases.toString()
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infoWindow.setContent(html);
+        infoWindow.open(map, marker, total_cases);  
+      });
+      markers.push(marker);
 
 }
