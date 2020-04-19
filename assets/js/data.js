@@ -11,7 +11,7 @@ var districts = [
 {
         'name': 'Dhaka',
         'cases':{
-            'total_cases': 879
+            'total_cases': 1014
         },
         'coordinates': {
             'latitude': 23.8103 ,
@@ -22,7 +22,7 @@ var districts = [
     {
         'name': 'Gazipur',
         'cases':{
-            'total_cases': 159
+            'total_cases': 173
         },
         'coordinates': {
             'latitude': 23.9999 ,
@@ -32,7 +32,7 @@ var districts = [
 {
         'name': 'Kishoreganj',
         'cases':{
-            'total_cases': 54
+            'total_cases': 77
         },
         'coordinates': {
             'latitude': 24.4260,
@@ -42,7 +42,7 @@ var districts = [
 {
         'name': 'Madaripur',
         'cases':{
-            'total_cases': 25
+            'total_cases': 26
         },
         'coordinates': {
             'latitude': 23.2393 ,
@@ -62,7 +62,7 @@ var districts = [
 {
         'name': 'Narayanganj',
         'cases':{
-            'total_cases': 309
+            'total_cases': 386
         },
         'coordinates': {
             'latitude': 23.6238 ,
@@ -82,7 +82,7 @@ var districts = [
 {
         'name': 'Narsingdi',
         'cases':{
-            'total_cases': 93
+            'total_cases': 105
         },
         'coordinates': {
             'latitude': 24.1344 ,
@@ -112,7 +112,7 @@ var districts = [
 {
         'name': 'Tangail',
         'cases':{
-            'total_cases': 9
+            'total_cases': 10
         },
         'coordinates': {
             'latitude': 24.2513 ,
@@ -142,11 +142,51 @@ var districts = [
  {
         'name': 'Chattogram',
         'cases':{
-            'total_cases': 38
+            'total_cases': 39
         },
         'coordinates': {
             'latitude': 22.3569 ,
             'longitude': 91.7832
+        }
+    },
+    {
+        'name': 'Cox’s Bazar',
+        'cases':{
+            'total_cases': 1
+        },
+        'coordinates': {
+            'latitude': 21.4272,
+            'longitude': 92.0058
+        }
+    },
+    {
+        'name': 'Comilla',
+        'cases':{
+            'total_cases': 19
+        },
+        'coordinates': {
+            'latitude': 23.4607,
+            'longitude': 91.1809
+        }
+    },
+    {
+        'name': 'B. Baria',
+        'cases':{
+            'total_cases':11
+        },
+        'coordinates': {
+            'latitude': 23.9608,
+            'longitude': 91.1115
+        }
+    },
+    {
+        'name': 'Lakshmipur',
+        'cases':{
+            'total_cases':21
+        },
+        'coordinates': {
+            'latitude': 22.9447,
+            'longitude': 90.8282
         }
     },
     {
@@ -159,16 +199,7 @@ var districts = [
             'longitude': 92.3686
         }
     },
-{
-        'name': 'Cox’s Bazar',
-        'cases':{
-            'total_cases': 1
-        },
-        'coordinates': {
-            'latitude': 21.4272,
-            'longitude': 92.0058
-        }
-    },
+
     {
         'name': 'Noakhali',
         'cases':{
@@ -177,36 +208,6 @@ var districts = [
         'coordinates': {
             'latitude': 22.8724,
             'longitude': 91.0973
-        }
-    },
-{
-        'name': 'Comilla',
-        'cases':{
-            'total_cases': 17
-        },
-        'coordinates': {
-            'latitude': 23.4607,
-            'longitude': 91.1809
-        }
-    },
-{
-        'name': 'B. Baria',
-        'cases':{
-            'total_cases':10
-        },
-        'coordinates': {
-            'latitude': 23.9608,
-            'longitude': 91.1115
-        }
-    },
-{
-        'name': 'Lakshmipur',
-        'cases':{
-            'total_cases':18
-        },
-        'coordinates': {
-            'latitude': 22.9447,
-            'longitude': 90.8282
         }
     },
 {
