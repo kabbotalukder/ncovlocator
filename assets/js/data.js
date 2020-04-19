@@ -195,8 +195,8 @@ var districts = [
             'total_cases': 1
         },
         'coordinates': {
-            'latitude': 21.8311,
-            'longitude': 92.3686
+            'latitude': 22.1936,
+            'longitude': 92.2187
         }
     },
 
