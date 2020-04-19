@@ -149,6 +149,16 @@ var districts = [
             'longitude': 91.7832
         }
     },
+    {
+        'name': 'Bandarban',
+        'cases':{
+            'total_cases': 1
+        },
+        'coordinates': {
+            'latitude': 21.8311,
+            'longitude': 92.3686
+        }
+    },
 {
         'name': 'Cox’s Bazar',
         'cases':{
