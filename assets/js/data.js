@@ -160,7 +160,7 @@ var districts = [
         }
     },
     {
-        'name': 'Comilla',
+        'name': 'Cumilla',
         'cases':{
             'total_cases': 19
         },
@@ -263,7 +263,7 @@ var districts = [
     {
         'name': 'Rangpur',
         'cases':{
-            'total_cases': 4
+            'total_cases': 3
         },
         'coordinates': {
             'latitude': 25.7439 ,
@@ -283,7 +283,7 @@ var districts = [
 {
         'name': 'Nilphamari',
         'cases':{
-            'total_cases': 6
+            'total_cases': 9
         },
         'coordinates': {
             'latitude': 25.8483 ,
@@ -313,17 +313,27 @@ var districts = [
     {
         'name': 'Dinajpur',
         'cases':{
-            'total_cases': 8
+            'total_cases': 10
         },
         'coordinates': {
             'latitude': 25.6249 ,
             'longitude': 88.6332
         }
     },
+    {
+        'name': 'Panchagar',
+        'cases':{
+            'total_cases': 1
+        },
+        'coordinates': {
+            'latitude': 26.2709 ,
+            'longitude': 88.5952
+        }
+    },
 {
         'name': 'Thakurgaon',
         'cases':{
-            'total_cases': 3
+            'total_cases': 6
         },
         'coordinates': {
             'latitude': 26.0418 ,
@@ -338,6 +348,26 @@ var districts = [
         'coordinates': {
             'latitude': 22.8456 ,
             'longitude': 89.5403
+        }
+    },
+    {
+        'name': 'Jessore',
+        'cases':{
+            'total_cases': 1
+        },
+        'coordinates': {
+            'latitude': 23.1778 ,
+            'longitude': 89.1801
+        }
+    },
+    {
+        'name': 'Bagerhat',
+        'cases':{
+            'total_cases': 1
+        },
+        'coordinates': {
+            'latitude': 22.6602 ,
+            'longitude': 89.7895
         }
     },
 {
@@ -363,7 +393,7 @@ var districts = [
     {
         'name': 'Mymensingh',
         'cases':{
-            'total_cases': 18
+            'total_cases': 21
         },
         'coordinates': {
             'latitude': 24.7471 ,
@@ -373,7 +403,7 @@ var districts = [
 {
         'name': 'Jamalpur',
         'cases':{
-            'total_cases': 12
+            'total_cases': 20
         },
         'coordinates': {
             'latitude': 25.0831 ,
@@ -383,7 +413,7 @@ var districts = [
 {
         'name': 'Netrokona',
         'cases':{
-            'total_cases': 7
+            'total_cases': 14
         },
         'coordinates': {
             'latitude': 24.8103 ,
@@ -393,7 +423,7 @@ var districts = [
 {
         'name': 'Sherpur',
         'cases':{
-            'total_cases': 5
+            'total_cases': 11
         },
         'coordinates': {
             'latitude': 25.0194 ,
@@ -401,9 +431,19 @@ var districts = [
         }
     },
     {
+        'name': 'Barguna',
+        'cases':{
+            'total_cases': 10
+        },
+        'coordinates': {
+            'latitude': 22.0953 ,
+            'longitude': 90.1121
+        }
+    },
+    {
         'name': 'Barisal',
         'cases':{
-            'total_cases': 17
+            'total_cases': 21
         },
         'coordinates': {
             'latitude': 22.7010 ,
@@ -443,11 +483,41 @@ var districts = [
 {
         'name': 'Jhalokathi',
         'cases':{
-            'total_cases': 3
+            'total_cases': 4
         },
         'coordinates': {
             'latitude': 22.6406,
             'longitude': 90.1987
+        }
+    },
+    {
+        'name': 'Joyputhat',
+        'cases':{
+            'total_cases': 2
+        },
+        'coordinates': {
+            'latitude': 25.0947 ,
+            'longitude': 89.0945
+        }
+    },
+    {
+        'name': 'Pabna',
+        'cases':{
+            'total_cases': 2
+        },
+        'coordinates': {
+            'latitude': 24.1585 ,
+            'longitude': 89.4481
+        }
+    },
+    {
+        'name': 'Bogra',
+        'cases':{
+            'total_cases': 1
+        },
+        'coordinates': {
+            'latitude': 24.8481 ,
+            'longitude': 89.3730
         }
     },
     {
