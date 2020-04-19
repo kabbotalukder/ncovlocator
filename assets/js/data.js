@@ -1,6 +1,6 @@
 var nation = 
 {
-    'update' : '19th April, 11:00PM' ,   
+    'update' : '19th April, 8:00PM' ,   
     'active' : 2456,
     'death' : 91,
     'recovered' : 75,  
@@ -431,16 +431,6 @@ var districts = [
     }
 },
 {
-    'name': 'Barguna',
-    'cases':{
-        'total_cases': 10
-    },
-    'coordinates': {
-        'latitude': 22.0953 ,
-        'longitude': 90.1121
-    }
-},
-{
     'name': 'Barisal',
     'cases':{
         'total_cases': 21
@@ -453,7 +443,7 @@ var districts = [
 {
     'name': 'Barguna',
     'cases':{
-        'total_cases': 5
+        'total_cases': 10
     },
     'coordinates': {
         'latitude': 22.0953,
