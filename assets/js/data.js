@@ -520,4 +520,14 @@ var districts = [
         'longitude': 88.6042
     }
 },
+ {
+    'name': 'Sirajganj',
+    'cases':{
+        'total_cases': 1
+    },
+    'coordinates': {
+        'latitude': 24.3141 ,
+        'longitude': 89.5700
+    }
+},
 ]
