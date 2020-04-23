@@ -1,6 +1,6 @@
 var nation = 
 {
-    'update' : '19th April, 8:00PM' ,   
+    'update' : '24th April, 3:00AM' ,   
     'cases' : [4186 , 414],
     'death' : [127 , 7],
     'recovered' : [108 , 16],  
