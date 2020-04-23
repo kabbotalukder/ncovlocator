@@ -1,1 +1,83 @@
-var map;window.onload=function(){displayData()};var infoWindow,locationSelect,markers=[],main_bound={north:27.382407993732738,east:95.31653598567469,south:19.463173036003,west:85.07727182551838};function initMap(){map=new google.maps.Map(document.getElementById("map"),{center:{lat:23.221057,lng:90.425433},zoom:11,disableDefaultUI:!0,restriction:{latLngBounds:main_bound,strictBounds:!1}}),infoWindow=new google.maps.InfoWindow,showStoresMarkers()}function displayData(){var e=nation.update,n=nation.active,o=nation.death,t=nation.recovered;document.getElementById("update").innerHTML=e,document.getElementById("cases").innerHTML=n,document.getElementById("death").innerHTML=o,document.getElementById("recovered").innerHTML=t}function showStoresMarkers(){var e=new google.maps.LatLngBounds;for(var[n,o]of districts.entries()){var t=new google.maps.LatLng(o.coordinates.latitude,o.coordinates.longitude),a=o.name,i=o.cases.total_cases;e.extend(t),createMarker(t,a,i,n)}map.fitBounds(e)}function createMarker(e,n,o){var t="<b>"+n+"</b> </br>Number of Cases : "+o,a=new google.maps.Marker({map:map,position:e,animation:google.maps.Animation.DROP,label:o.toString()});google.maps.event.addListener(a,"click",function(){infoWindow.setContent(t),infoWindow.open(map,a,o)}),markers.push(a)}
+window.onload = function() {
+displayData();
+}
+
+var map;
+var markers = [];
+var infoWindow;
+var locationSelect;
+var main_bound = {
+north: 27.382407993732738,
+east: 95.31653598567469,
+south: 19.463173036003,
+west: 85.07727182551838,
+};
+
+function initMap() {
+// var location = {lat: 23.6850, lng: 90.3563};
+var location = {lat: 23.221057, lng: 90.425433}
+map = new google.maps.Map(document.getElementById('map'), {
+center: location,
+zoom: 11,
+disableDefaultUI: true,
+restriction: {
+latLngBounds: main_bound,
+strictBounds: false,
+},
+});
+infoWindow = new google.maps.InfoWindow();
+showStoresMarkers();
+}
+
+function displayData(){
+var update_time = nation['update'];
+var total_cases = nation['cases'][0];
+var daily_cases = nation['cases'][1];
+var total_death = nation['death'][0];
+var daily_death = nation['death'][1];
+var total_recovered = nation['recovered'][0];
+var daily_recovered = nation['recovered'][1];
+
+document.getElementById('update').innerHTML = update_time;
+document.getElementById('cases').innerHTML = total_cases;
+document.getElementById('cases_daily').innerHTML = daily_cases;
+document.getElementById('death').innerHTML = total_death;
+document.getElementById('death_daily').innerHTML = daily_death;
+document.getElementById('recovered').innerHTML = total_recovered;
+document.getElementById('recovered_daily').innerHTML = daily_recovered;
+
+}
+
+function showStoresMarkers(){
+var bounds = new google.maps.LatLngBounds();
+for(var [index , district] of districts.entries()){
+
+var latlng = new google.maps.LatLng(
+district['coordinates']['latitude'],
+district['coordinates']['longitude']
+);
+
+var name = district['name'];
+var total_cases = district['cases']['total_cases'];
+bounds.extend(latlng);
+createMarker(latlng, name,total_cases, index);
+}
+map.fitBounds(bounds);
+}
+
+function createMarker(latlng, name, total_cases){
+
+var html = "<b>" + name + '</b> </br>Number of Cases : ' + total_cases  ;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: latlng,
+    animation: google.maps.Animation.DROP,
+    label : total_cases.toString()
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infoWindow.setContent(html);
+    infoWindow.open(map, marker, total_cases);  
+  });
+  markers.push(marker);
+
+}
