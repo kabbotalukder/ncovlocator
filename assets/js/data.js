@@ -3,7 +3,7 @@ var nation =
     'update' : '25th April, 3:00PM' ,   
     'cases' : [4998 , 309],
     'death' : [140 , 9],
-    'recovered' : [112 , 0],  
+    'recovered' : [113 , 1],  
 }
 
 
@@ -11,7 +11,7 @@ var districts = [
 {
     'name': 'Dhaka',
     'cases':{
-        'total_cases': 2124
+        'total_cases': 2299
     },
     'coordinates': {
         'latitude': 23.8103 ,
@@ -22,7 +22,7 @@ var districts = [
 {
     'name': 'Gazipur',
     'cases':{
-        'total_cases': 294
+        'total_cases': 261
     },
     'coordinates': {
         'latitude': 23.9999 ,
@@ -32,7 +32,7 @@ var districts = [
 {
     'name': 'Kishoreganj',
     'cases':{
-        'total_cases': 180
+        'total_cases': 181
     },
     'coordinates': {
         'latitude': 24.4260,
@@ -42,7 +42,7 @@ var districts = [
 {
     'name': 'Madaripur',
     'cases':{
-        'total_cases': 28
+        'total_cases': 29
     },
     'coordinates': {
         'latitude': 23.2393 ,
@@ -62,7 +62,7 @@ var districts = [
 {
     'name': 'Narayanganj',
     'cases':{
-        'total_cases': 566
+        'total_cases': 594
     },
     'coordinates': {
         'latitude': 23.6238 ,
@@ -72,7 +72,7 @@ var districts = [
 {
     'name': 'Munshigonj',
     'cases':{
-        'total_cases': 63
+        'total_cases': 62
     },
     'coordinates': {
         'latitude': 23.4981 ,
@@ -92,7 +92,7 @@ var districts = [
 {
     'name': 'Rajbari',
     'cases':{
-        'total_cases': 11
+        'total_cases': 12
     },
     'coordinates': {
         'latitude': 23.7639 ,
@@ -102,7 +102,7 @@ var districts = [
 {
     'name': 'Faridpur',
     'cases':{
-        'total_cases': 8
+        'total_cases': 9
     },
     'coordinates': {
         'latitude': 23.6204 ,
@@ -112,7 +112,7 @@ var districts = [
 {
     'name': 'Tangail',
     'cases':{
-        'total_cases': 21
+        'total_cases': 22
     },
     'coordinates': {
         'latitude': 24.2513 ,
@@ -122,7 +122,7 @@ var districts = [
 {
     'name': 'Shariatpur',
     'cases':{
-        'total_cases': 11
+        'total_cases': 14
     },
     'coordinates': {
         'latitude': 23.2423 ,
@@ -132,7 +132,7 @@ var districts = [
 {
     'name': 'Gopalganj',
     'cases':{
-        'total_cases': 43
+        'total_cases': 46
     },
     'coordinates': {
         'latitude': 23.0488 ,
@@ -142,7 +142,7 @@ var districts = [
 {
     'name': 'Chattogram',
     'cases':{
-        'total_cases': 45
+        'total_cases': 46
     },
     'coordinates': {
         'latitude': 22.3569 ,
@@ -162,7 +162,7 @@ var districts = [
 {
     'name': 'Cumilla',
     'cases':{
-        'total_cases': 32
+        'total_cases': 39
     },
     'coordinates': {
         'latitude': 23.4607,
@@ -172,7 +172,7 @@ var districts = [
 {
     'name': 'B. Baria',
     'cases':{
-        'total_cases':25
+        'total_cases':24
     },
     'coordinates': {
         'latitude': 23.9608,
@@ -182,7 +182,7 @@ var districts = [
 {
     'name': 'Lakshmipur',
     'cases':{
-        'total_cases':27
+        'total_cases':28
     },
     'coordinates': {
         'latitude': 22.9447,
@@ -192,7 +192,7 @@ var districts = [
 {
     'name': 'Bandarban',
     'cases':{
-        'total_cases': 7
+        'total_cases': 4
     },
     'coordinates': {
         'latitude': 22.1936,
@@ -202,7 +202,7 @@ var districts = [
 {
     'name': 'Noakhali',
     'cases':{
-        'total_cases': 7
+        'total_cases': 5
     },
     'coordinates': {
         'latitude': 22.8724,
@@ -252,7 +252,7 @@ var districts = [
 {
     'name': 'Habiganj',
     'cases':{
-        'total_cases': 21
+        'total_cases': 41
     },
     'coordinates': {
         'latitude': 24.4771 ,
@@ -272,7 +272,7 @@ var districts = [
 {
     'name': 'Rangpur',
     'cases':{
-        'total_cases': 15
+        'total_cases': 18
     },
     'coordinates': {
         'latitude': 25.7439 ,
@@ -282,7 +282,7 @@ var districts = [
 {
     'name': 'Gaibandha',
     'cases':{
-        'total_cases': 14
+        'total_cases': 16
     },
     'coordinates': {
         'latitude': 25.3290 ,
@@ -312,7 +312,7 @@ var districts = [
 {
     'name': 'Kurigram',
     'cases':{
-        'total_cases': 5
+        'total_cases': 3
     },
     'coordinates': {
         'latitude': 25.8072 ,
@@ -342,7 +342,7 @@ var districts = [
 {
     'name': 'Thakurgaon',
     'cases':{
-        'total_cases': 8
+        'total_cases': 7
     },
     'coordinates': {
         'latitude': 26.0418 ,
@@ -432,7 +432,7 @@ var districts = [
 {
     'name': 'Mymensingh',
     'cases':{
-        'total_cases': 68
+        'total_cases': 87
     },
     'coordinates': {
         'latitude': 24.7471 ,
@@ -442,7 +442,7 @@ var districts = [
 {
     'name': 'Jamalpur',
     'cases':{
-        'total_cases': 30
+        'total_cases': 37
     },
     'coordinates': {
         'latitude': 25.0831 ,
@@ -452,7 +452,7 @@ var districts = [
 {
     'name': 'Netrokona',
     'cases':{
-        'total_cases': 22
+        'total_cases': 25
     },
     'coordinates': {
         'latitude': 24.8103 ,
@@ -480,9 +480,19 @@ var districts = [
     }
 },
 {
+    'name': 'Bhola',
+    'cases':{
+        'total_cases': 02
+    },
+    'coordinates': {
+        'latitude': 22.1785,
+        'longitude': 90.7101
+    }
+},      
+{
     'name': 'Barisal',
     'cases':{
-        'total_cases': 35
+        'total_cases': 38
     },
     'coordinates': {
         'latitude': 22.7010 ,
@@ -492,7 +502,7 @@ var districts = [
 {
     'name': 'Patuakhali',
     'cases':{
-        'total_cases': 16
+        'total_cases': 19
     },
     'coordinates': {
         'latitude': 22.2249,
@@ -502,7 +512,7 @@ var districts = [
 {
     'name': 'Pirojpur',
     'cases':{
-        'total_cases': 5
+        'total_cases': 7
     },
     'coordinates': {
         'latitude': 22.5791,
@@ -552,7 +562,7 @@ var districts = [
 {
     'name': 'Bogura',
     'cases':{
-        'total_cases': 10
+        'total_cases': 11
     },
     'coordinates': {
         'latitude': 24.8481 ,
@@ -582,7 +592,7 @@ var districts = [
 {
     'name': 'Rajshahi',
     'cases':{
-        'total_cases': 9
+        'total_cases': 10
     },
     'coordinates': {
         'latitude': 24.3745 ,
