@@ -11,7 +11,7 @@ var districts = [
 {
     'name': 'Dhaka',
     'cases':{
-        'total_cases': 2299
+        'total_cases': 2564
     },
     'coordinates': {
         'latitude': 23.8103 ,
@@ -22,7 +22,7 @@ var districts = [
 {
     'name': 'Gazipur',
     'cases':{
-        'total_cases': 261
+        'total_cases': 308
     },
     'coordinates': {
         'latitude': 23.9999 ,
@@ -32,7 +32,7 @@ var districts = [
 {
     'name': 'Kishoreganj',
     'cases':{
-        'total_cases': 181
+        'total_cases': 183
     },
     'coordinates': {
         'latitude': 24.4260,
@@ -42,7 +42,7 @@ var districts = [
 {
     'name': 'Madaripur',
     'cases':{
-        'total_cases': 29
+        'total_cases': 
     },
     'coordinates': {
         'latitude': 23.2393 ,
