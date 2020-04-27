@@ -1,6 +1,6 @@
 var nation = 
 {
-    'update' : '27th April, 3:00PM' ,   
+    'update' : '27th April, 8:00PM' ,   
     'cases' : [5913 , 497],
     'death' : [152 , 7],
     'recovered' : [131 , 9],  
@@ -11,7 +11,7 @@ var districts = [
 {
     'name': 'Dhaka',
     'cases':{
-        'total_cases': 2564
+        'total_cases': 2802
     },
     'coordinates': {
         'latitude': 23.8103 ,
@@ -22,7 +22,7 @@ var districts = [
 {
     'name': 'Gazipur',
     'cases':{
-        'total_cases': 308
+        'total_cases': 315
     },
     'coordinates': {
         'latitude': 23.9999 ,
@@ -32,7 +32,7 @@ var districts = [
 {
     'name': 'Kishoreganj',
     'cases':{
-        'total_cases': 183
+        'total_cases': 191
     },
     'coordinates': {
         'latitude': 24.4260,
@@ -42,7 +42,7 @@ var districts = [
 {
     'name': 'Madaripur',
     'cases':{
-        'total_cases': 30
+        'total_cases': 36
     },
     'coordinates': {
         'latitude': 23.2393 ,
@@ -52,7 +52,7 @@ var districts = [
 {
     'name': 'Manikganj',
     'cases':{
-        'total_cases': 12
+        'total_cases': 15
     },
     'coordinates': {
         'latitude': 23.8617 ,
@@ -62,7 +62,7 @@ var districts = [
 {
     'name': 'Narayanganj',
     'cases':{
-        'total_cases': 625
+        'total_cases': 699
     },
     'coordinates': {
         'latitude': 23.6238 ,
@@ -72,7 +72,7 @@ var districts = [
 {
     'name': 'Munshigonj',
     'cases':{
-        'total_cases': 72
+        'total_cases': 78
     },
     'coordinates': {
         'latitude': 23.4981 ,
@@ -112,7 +112,7 @@ var districts = [
 {
     'name': 'Tangail',
     'cases':{
-        'total_cases': 23
+        'total_cases': 24
     },
     'coordinates': {
         'latitude': 24.2513 ,
@@ -132,7 +132,7 @@ var districts = [
 {
     'name': 'Gopalganj',
     'cases':{
-        'total_cases': 49
+        'total_cases': 50
     },
     'coordinates': {
         'latitude': 23.0488 ,
@@ -142,7 +142,7 @@ var districts = [
 {
     'name': 'Chattogram',
     'cases':{
-        'total_cases': 48
+        'total_cases': 56
     },
     'coordinates': {
         'latitude': 22.3569 ,
@@ -162,7 +162,7 @@ var districts = [
 {
     'name': 'Cumilla',
     'cases':{
-        'total_cases': 41
+        'total_cases': 42
     },
     'coordinates': {
         'latitude': 23.4607,
@@ -172,7 +172,7 @@ var districts = [
 {
     'name': 'B. Baria',
     'cases':{
-        'total_cases':31
+        'total_cases':35
     },
     'coordinates': {
         'latitude': 23.9608,
@@ -182,7 +182,7 @@ var districts = [
 {
     'name': 'Lakshmipur',
     'cases':{
-        'total_cases':28
+        'total_cases':31
     },
     'coordinates': {
         'latitude': 22.9447,
@@ -232,7 +232,7 @@ var districts = [
 {
     'name': 'Moulvibazar',
     'cases':{
-        'total_cases': 6
+        'total_cases': 12
     },
     'coordinates': {
         'latitude': 24.3095 ,
@@ -242,7 +242,7 @@ var districts = [
 {
     'name': 'Sunamganj',
     'cases':{
-        'total_cases': 14
+        'total_cases': 15
     },
     'coordinates': {
         'latitude': 25.0715 ,
@@ -252,7 +252,7 @@ var districts = [
 {
     'name': 'Habiganj',
     'cases':{
-        'total_cases': 47
+        'total_cases': 48
     },
     'coordinates': {
         'latitude': 24.4771 ,
@@ -262,7 +262,7 @@ var districts = [
 {
     'name': 'Sylhet',
     'cases':{
-        'total_cases': 12
+        'total_cases': 14
     },
     'coordinates': {
         'latitude': 24.8949 ,
@@ -272,7 +272,7 @@ var districts = [
 {
     'name': 'Rangpur',
     'cases':{
-        'total_cases': 20
+        'total_cases': 21
     },
     'coordinates': {
         'latitude': 25.7439 ,
@@ -282,7 +282,7 @@ var districts = [
 {
     'name': 'Gaibandha',
     'cases':{
-        'total_cases': 16
+        'total_cases': 17
     },
     'coordinates': {
         'latitude': 25.3290 ,
@@ -312,7 +312,7 @@ var districts = [
 {
     'name': 'Kurigram',
     'cases':{
-        'total_cases': 3
+        'total_cases': 6
     },
     'coordinates': {
         'latitude': 25.8072 ,
@@ -342,7 +342,7 @@ var districts = [
 {
     'name': 'Thakurgaon',
     'cases':{
-        'total_cases': 7
+        'total_cases': 8
     },
     'coordinates': {
         'latitude': 26.0418 ,
@@ -352,7 +352,7 @@ var districts = [
 {
     'name': 'Khulna',
     'cases':{
-        'total_cases': 7
+        'total_cases': 8
     },
     'coordinates': {
         'latitude': 22.8456 ,
@@ -362,7 +362,7 @@ var districts = [
 {
     'name': 'Jessore',
     'cases':{
-        'total_cases': 22
+        'total_cases': 26
     },
     'coordinates': {
         'latitude': 23.1778 ,
@@ -382,7 +382,7 @@ var districts = [
 {
     'name': 'Narail',
     'cases':{
-        'total_cases': 10
+        'total_cases': 13
     },
     'coordinates': {
         'latitude': 23.1657 ,
@@ -412,7 +412,7 @@ var districts = [
 {
     'name': 'Jenaidah ',
     'cases':{
-        'total_cases': 7
+        'total_cases': 11
     },
     'coordinates': {
         'latitude': 23.5450 ,
@@ -422,7 +422,7 @@ var districts = [
 {
     'name': 'Kushtia',
     'cases':{
-        'total_cases': 4
+        'total_cases': 10
     },
     'coordinates': {
         'latitude': 23.8907 ,
@@ -442,7 +442,7 @@ var districts = [
 {
     'name': 'Mymensingh',
     'cases':{
-        'total_cases': 92
+        'total_cases': 108
     },
     'coordinates': {
         'latitude': 24.7471 ,
@@ -462,7 +462,7 @@ var districts = [
 {
     'name': 'Netrokona',
     'cases':{
-        'total_cases': 24
+        'total_cases': 25
     },
     'coordinates': {
         'latitude': 24.8103 ,
@@ -472,7 +472,7 @@ var districts = [
 {
     'name': 'Sherpur',
     'cases':{
-        'total_cases': 19
+        'total_cases': 23
     },
     'coordinates': {
         'latitude': 25.0194 ,
@@ -542,7 +542,7 @@ var districts = [
 {
     'name': 'Joypurhat',
     'cases':{
-        'total_cases': 6
+        'total_cases': 10
     },
     'coordinates': {
         'latitude': 25.0947 ,
@@ -552,7 +552,7 @@ var districts = [
 {
     'name': 'Pabna',
     'cases':{
-        'total_cases': 3
+        'total_cases': 2
     },
     'coordinates': {
         'latitude': 24.1585 ,
@@ -572,7 +572,7 @@ var districts = [
 {
     'name': 'Bogura',
     'cases':{
-        'total_cases': 12
+        'total_cases': 17
     },
     'coordinates': {
         'latitude': 24.8481 ,
@@ -582,7 +582,7 @@ var districts = [
 {
     'name': 'Naogaon',
     'cases':{
-        'total_cases': 2
+        'total_cases': 1
     },
     'coordinates': {
         'latitude': 24.7936 ,
