@@ -706,6 +706,18 @@ var districts = [
     }
 },
 {
+    'name': 'Natore',
+    'cases':{
+        'total_cases': 8,
+        'total_deaths': 0,
+        'total_recoveries': 0 
+    },
+    'coordinates': {
+        'latitude': 24.4079 ,
+        'longitude': 88.9749
+    }
+}, 
+{
     'name': 'Naogaon',
     'cases':{
         'total_cases': 15,
