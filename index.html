@@ -13,7 +13,8 @@
 <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 <script src="assets/jQuery/jquery.simple-text-rotator.min.js"></script>
 <link rel="stylesheet" href="assets/jQuery/simpletextrotator.css">
-    <style>
+
+<style>
     #map div:nth-child(1) {
         z-index: 2;
     }
@@ -22,17 +23,26 @@
         z-index: 0;
     }
 </style>
+
 </head>
+
 <body>
-<div class="main">
+<div class="main" id="stateViewer">
     <div class="second-zero">
         <span>Last Updated :</span>  <span class="updater" id="update">
-        </span>       
+        </span>
     </div>
+
+    <div class="second-zero">
+        <button id="distBtn">District List</button>
+    </div>
+
     <div class="second-zero">
         <hr style="height:1px;border-width:0px;background-color:#444">
-        <span>Last 24 Hours</span>      
+        <span>Last 24 Hours</span>
+        
     </div>
+
     <div class="second-one">
         <div class="block">
             <span class="block1">Cases</span>
@@ -50,8 +60,10 @@
 
     <div class="second-zero">
         <hr style="height:1px;border-width:0px;background-color:#444">
-        <span>Total</span>   
+        <span>Total</span>
+        
     </div>
+
     <div class="second-one">
         <div class="block">
             <span class="block1">Cases</span>
@@ -67,19 +79,72 @@
         </div>
     </div>
     <div class="second-two rotate">
-        Source : IEDCR, Design & Development : Kabbo Talukder, Data Management : Partha Parizat 
+        Source : IEDCR, Design & Development : Kabbo Talukder, Data Management : Partha Parizat
+    </div>
+
+</div>
+<div class="main-2" id="distList">
+    <div class="main-2-maintitle">
+        <div class="main-2-maintitle1">District Wise List</div>
+        <div class="main-2-maintitle2">
+            <button id="listBtnclose">X</button>
+        </div>
+    </div>
+    <div class="main-2-titles">
+        <div class="main-2-title dist-name">District</br>Name</div>
+        <div class="main-2-title dist-case">Total</br>Case</div>
+        <div class="main-2-title dist-death">Total</br>Death</div>
+    </div>
+    <div class="dist-list-cont">
+    <div class="dist-list-viewer">
+        
+        <div class="dist-list">
+            
+        </div>
+
+        <div class="death-list">
+            
+        </div>
+
+        <div class="recover-list">
+            
+        </div>
+
+    </div>
     </div>
 </div>
+
+<script>
+    var btn, list, state;
+    btn = document.getElementById('distBtn');
+    list = document.getElementById('distList');
+    listclose = document.getElementById('listBtnclose')
+    state = document.getElementById('stateViewer')
+
+    btn.onclick = function() {
+        list.style.display = 'flex';
+        state.style.zIndex = '0';
+    };
+    listclose.onclick = function() {
+        list.style.display = 'none';
+        state.style.zIndex = '10';
+    };
+</script>
+
 <script>
     $(".rotate").textrotator({
   animation: "dissolve",
   separator: ",",
   speed: 3000
-});
+    });
 </script>
+
 <div id="map"></div>
+
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyijoyQ2uwlH2YccHq_4-JTkyG8lNXfY8&callback=initMap">
 </script>
+
+
 </body>
 </html>
