@@ -1,1 +1,121 @@
-var map;window.onload=function(){displayData()};var infoWindow,locationSelect,markers=[],main_bound={north:27.382407993732738,east:95.31653598567469,south:19.463173036003,west:85.07727182551838};function initMap(){map=new google.maps.Map(document.getElementById("map"),{center:{lat:23.221057,lng:90.425433},zoom:11,disableDefaultUI:!0,restriction:{latLngBounds:main_bound,strictBounds:!1}}),infoWindow=new google.maps.InfoWindow,showStoresMarkers()}function displayData(){var e=nation.update,n=nation.cases[0],t=nation.cases[1],a=nation.death[0],o=nation.death[1],i=nation.recovered[0],r=nation.recovered[1];document.getElementById("update").innerHTML=e,document.getElementById("cases").innerHTML=n,document.getElementById("cases_daily").innerHTML=t,document.getElementById("death").innerHTML=a,document.getElementById("death_daily").innerHTML=o,document.getElementById("recovered").innerHTML=i,document.getElementById("recovered_daily").innerHTML=r}function showStoresMarkers(){var e=new google.maps.LatLngBounds;for(var[n,t]of districts.entries()){var a=new google.maps.LatLng(t.coordinates.latitude,t.coordinates.longitude),o=t.name,i=t.cases.total_cases,r=t.cases.total_deaths,s=t.cases.total_recoveries;e.extend(a),createMarker(a,o,i,r,s,n)}map.fitBounds(e)}function createMarker(e,n,t,a,o){var i="<b>"+n+"</b> </br>Total Case : "+t+"</b> </br>Total Death : "+a,r=new google.maps.Marker({map:map,position:e,animation:google.maps.Animation.DROP,label:t.toString()});google.maps.event.addListener(r,"click",function(){infoWindow.setContent(i),infoWindow.open(map,r,t)}),markers.push(r)}
+window.onload = function() {
+displayData();
+displayDistData();
+}
+
+var map;
+var markers = [];
+var infoWindow;
+var locationSelect;
+var main_bound = {
+north: 27.382407993732738,
+east: 95.31653598567469,
+south: 19.463173036003,
+west: 85.07727182551838,
+};
+
+function initMap() {
+var location = {lat: 23.221057, lng: 90.425433}
+map = new google.maps.Map(document.getElementById('map'), {
+center: location,
+zoom: 11,
+disableDefaultUI: true,
+restriction: {
+latLngBounds: main_bound,
+strictBounds: false,
+},
+});
+infoWindow = new google.maps.InfoWindow();
+showStoresMarkers();
+}
+
+function displayData(){
+var update_time = nation['update'];
+var total_cases = nation['cases'][0];
+var daily_cases = nation['cases'][1];
+var total_death = nation['death'][0];
+var daily_death = nation['death'][1];
+var total_recovered = nation['recovered'][0];
+var daily_recovered = nation['recovered'][1];
+
+document.getElementById('update').innerHTML = update_time;
+document.getElementById('cases').innerHTML = total_cases;
+document.getElementById('cases_daily').innerHTML = daily_cases;
+document.getElementById('death').innerHTML = total_death;
+document.getElementById('death_daily').innerHTML = daily_death;
+document.getElementById('recovered').innerHTML = total_recovered;
+document.getElementById('recovered_daily').innerHTML = daily_recovered;
+
+}
+
+function showStoresMarkers(){
+var bounds = new google.maps.LatLngBounds();
+for(var [index , district] of districts.entries()){
+
+var latlng = new google.maps.LatLng(
+district['coordinates']['latitude'],
+district['coordinates']['longitude']
+);
+
+var name = district['name'];
+var total_cases = district['cases']['total_cases'];
+var total_deaths = district['cases']['total_deaths'];
+var total_recoveries = district['cases']['total_recoveries'];
+bounds.extend(latlng);
+createMarker(latlng, name,total_cases, total_deaths, total_recoveries, index);
+}
+map.fitBounds(bounds);
+}
+
+function displayDistData(){
+  var districtsHtml = ''
+  for(var [index,district] of districts.entries()){
+    var district_name = district['name'];
+    var district_death = district['cases']['total_cases'];
+    var district_recovery = district['cases']['total_recoveries'];
+
+    districtsHtml += `
+      
+
+    <div class="dist-list-cont">
+    <div class="dist-list-viewer">
+        
+        <div class="dist-list">
+        ${district_name} 
+        </div>
+
+        <div class="death-list">
+        ${district_death}
+        </div>
+
+        <div class="recover-list">
+        ${district_recovery}
+        </div>
+
+    </div>
+    </div>
+    `
+
+    document.querySelector('.dist-list-cont').innerHTML = districtsHtml;
+  }
+}
+
+function createMarker(latlng, name, total_cases, total_deaths, total_recoveries){
+
+var html = "<b>" + name + '</b> </br>Total Case : ' + total_cases + '</b> </br>Total Death : ' + total_deaths;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: latlng,
+    label: {
+      text: total_cases.toString(),
+      color: 'black',
+    }
+    
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infoWindow.setContent(html);
+    infoWindow.open(map, marker, total_cases);  
+  });
+  markers.push(marker);
+
+}
