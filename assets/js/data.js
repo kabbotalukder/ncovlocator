@@ -11,8 +11,8 @@ var districts = [
 {
     'name': 'Dhaka',
     'cases':{
-        'total_cases': 4609,
-        'total_deaths': 98,
+        'total_cases': 4895,
+        'total_deaths': 101,
         'total_recoveries': 77 
     },
     'coordinates': {
@@ -24,7 +24,7 @@ var districts = [
 {
     'name': 'Gazipur',
     'cases':{
-        'total_cases': 324,
+        'total_cases': 325,
         'total_deaths': 0,
         'total_recoveries': 1 
     },
@@ -36,7 +36,7 @@ var districts = [
 {
     'name': 'Kishoreganj',
     'cases':{
-        'total_cases': 201,
+        'total_cases': 202,
         'total_deaths': 1,
         'total_recoveries': 0 
     },
@@ -48,7 +48,7 @@ var districts = [
 {
     'name': 'Madaripur',
     'cases':{
-        'total_cases': 46,
+        'total_cases': 47,
         'total_deaths': 2,
         'total_recoveries': 9 
     },
@@ -72,9 +72,9 @@ var districts = [
 {
     'name': 'Narayanganj',
     'cases':{
-        'total_cases': 1002,
+        'total_cases': 1021,
         'total_deaths': 40,
-        'total_recoveries': 25 
+        'total_recoveries': 27 
     },
     'coordinates': {
         'latitude': 23.6238 ,
@@ -84,7 +84,7 @@ var districts = [
 {
     'name': 'Munshigonj',
     'cases':{
-        'total_cases': 126,
+        'total_cases': 127,
         'total_deaths': 4,
         'total_recoveries': 0 
     },
@@ -96,7 +96,7 @@ var districts = [
 {
     'name': 'Narsingdi',
     'cases':{
-        'total_cases': 152,
+        'total_cases': 154,
         'total_deaths': 1,
         'total_recoveries': 1 
     },
@@ -120,7 +120,7 @@ var districts = [
 {
     'name': 'Faridpur',
     'cases':{
-        'total_cases': 13,
+        'total_cases': 14,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
@@ -132,7 +132,7 @@ var districts = [
 {
     'name': 'Tangail',
     'cases':{
-        'total_cases': 29,
+        'total_cases': 30,
         'total_deaths': 3,
         'total_recoveries': 0 
     },
@@ -144,7 +144,7 @@ var districts = [
 {
     'name': 'Shariatpur',
     'cases':{
-        'total_cases': 35,
+        'total_cases': 40,
         'total_deaths': 1,
         'total_recoveries': 0 
     },
@@ -156,7 +156,7 @@ var districts = [
 {
     'name': 'Gopalganj',
     'cases':{
-        'total_cases': 45,
+        'total_cases': 47,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
@@ -168,7 +168,7 @@ var districts = [
 {
     'name': 'Chattogram',
     'cases':{
-        'total_cases': 80,
+        'total_cases': 82,
         'total_deaths': 2,
         'total_recoveries': 2 
     },
@@ -204,7 +204,7 @@ var districts = [
 {
     'name': 'B. Baria',
     'cases':{
-        'total_cases': 44,
+        'total_cases': 55,
         'total_deaths': 2,
         'total_recoveries': 0 
     },
@@ -229,7 +229,7 @@ var districts = [
 {
     'name': 'Lakshmipur',
     'cases':{
-        'total_cases':42,
+        'total_cases':46,
         'total_deaths': 1,
         'total_recoveries': 0 
     },
@@ -253,7 +253,7 @@ var districts = [
 {
     'name': 'Noakhali',
     'cases':{
-        'total_cases': 15,
+        'total_cases': 17,
         'total_deaths': 1,
         'total_recoveries': 0 
     },
@@ -289,7 +289,7 @@ var districts = [
 {
     'name': 'Moulvibazar',
     'cases':{
-        'total_cases': 17,
+        'total_cases': 19,
         'total_deaths': 2,
         'total_recoveries': 0 
     },
@@ -313,7 +313,7 @@ var districts = [
 {
     'name': 'Habiganj',
     'cases':{
-        'total_cases': 67,
+        'total_cases': 69,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
@@ -336,8 +336,7 @@ var districts = [
 },    
 {
     'name': 'Rangpur',
-    'cases':{
-        'total_cases': 50,
+    'cases': 62,
         'total_deaths': 1,
         'total_recoveries': 0 
     },
@@ -349,7 +348,7 @@ var districts = [
 {
     'name': 'Gaibandha',
     'cases':{
-        'total_cases': 25,
+        'total_cases': 23,
         'total_deaths': 0,
         'total_recoveries': 4 
     },
@@ -361,7 +360,7 @@ var districts = [
 {
     'name': 'Nilphamari',
     'cases':{
-        'total_cases': 16,
+        'total_cases': 23,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
@@ -385,7 +384,7 @@ var districts = [
 {
     'name': 'Kurigram',
     'cases':{
-        'total_cases': 19,
+        'total_cases': 22,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
@@ -397,7 +396,7 @@ var districts = [
 {
     'name': 'Dinajpur',
     'cases':{
-        'total_cases': 21,
+        'total_cases': 20,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
@@ -421,7 +420,7 @@ var districts = [
 {
     'name': 'Thakurgaon',
     'cases':{
-        'total_cases': 17,
+        'total_cases': 19,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
@@ -553,8 +552,8 @@ var districts = [
 {
     'name': 'Mymensingh',
     'cases':{
-        'total_cases': 150,
-        'total_deaths': 2,
+        'total_cases': 166,
+        'total_deaths': 3,
         'total_recoveries': 0 
     },
     'coordinates': {
@@ -577,7 +576,7 @@ var districts = [
 {
     'name': 'Netrokona',
     'cases':{
-        'total_cases': 41,
+        'total_cases': 51,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
@@ -685,7 +684,7 @@ var districts = [
 {
     'name': 'Pabna',
     'cases':{
-        'total_cases': 10,
+        'total_cases': 11,
         'total_deaths': 1,
         'total_recoveries': 0 
     },
@@ -745,7 +744,7 @@ var districts = [
 {
     'name': 'Sirajganj',
     'cases':{
-        'total_cases': 3,
+        'total_cases': 4,
         'total_deaths': 0,
         'total_recoveries': 0 
     },
