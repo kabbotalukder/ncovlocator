@@ -3,7 +3,7 @@ var nation =
     'update' : '17th May, 2:40PM' ,   
     'cases' : [22268 , 1273],
     'death' : [328 , 14],
-    'recovered' : [4117 , 235],  
+    'recovered' : [4373 , 256],  
 }
 
 var districts = [
