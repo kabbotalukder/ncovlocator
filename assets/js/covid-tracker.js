@@ -64,33 +64,33 @@ map.fitBounds(bounds);
 }
 function createMarker(latlng, name, total_cases, total_deaths, total_recoveries){
 
-var clr,clr1,clr2,clr3;
-clr4 = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
-clr3 = "http://maps.google.com/mapfiles/ms/icons/orange-dot.png"
-clr2 = "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
-clr1 = "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+// var clr,clr1,clr2,clr3;
+// clr4 = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+// clr3 = "http://maps.google.com/mapfiles/ms/icons/orange-dot.png"
+// clr2 = "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+// clr1 = "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
 
-if (total_cases == 0){
-  clr = clr3;
-}
-else if (total_cases < 50){
-  clr = clr2
-}
-else if(total_cases < 100){
-  clr = clr3;
-}
-else{
-  clr = clr4;
-}
+// if (total_cases == 0){
+//   clr = clr3;
+// }
+// else if (total_cases < 50){
+//   clr = clr2
+// }
+// else if(total_cases < 100){
+//   clr = clr3;
+// }
+// else{
+//   clr = clr4;
+// }
 var html = "<b>" + name;
 
   var marker = new google.maps.Marker({
     map: map,
     position: latlng,
     animation: google.maps.Animation.DROP,
-    icon: {                             
-      url: clr
-    }
+    // icon: {                             
+    //   url: clr
+    // }
   });
   google.maps.event.addListener(marker, 'click', function() {
     infoWindow.setContent(html);
