@@ -23,7 +23,7 @@ var districts = [
 {
     'name': 'Gazipur',
     'cases':{
-        'total_cases': 3106,
+        'total_cases': 3270,
         'total_deaths': 0,
         'total_recoveries': 1 
     },
