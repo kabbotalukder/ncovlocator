@@ -60,8 +60,10 @@
 
     <div class="second-zero">
         <hr style="height:1px;border-width:0px;background-color:#444">
-        <span>Total</span>     
+        <span>Total</span>
+        
     </div>
+
     <div class="second-one">
         <div class="block">
             <span class="block1">Cases</span>
@@ -91,6 +93,7 @@
     <div class="main-2-titles">
         <div class="main-2-title dist-name">District</br>Name</div>
         <div class="main-2-title dist-case">Total</br>Case</div>
+        <!-- <div class="main-2-title dist-death">Total</br>Death</div> -->
     </div>
     <div class="dist-list-cont">
     <div class="dist-list-viewer">
@@ -98,9 +101,49 @@
         <div class="dist-list">
             
         </div>
+
+        <!-- <div class="death-list">
+            
+        </div>
+
+        <div class="recover-list">
+            
+        </div> -->
+
     </div>
     </div>
 </div>
+
+<div class="main-3" id="end">
+    <div class="main-3-maintitle">
+        <div class="main-2-maintitle1"></div>
+        <div class="main-2-maintitle2">
+            <button id="endBtnclose">X</button>
+        </div>
+    </div>
+    <div class="main-3-title">WE ARE CLOSED!</div>
+    <div class="main-3-main">It has been a great run.</br>Thank you all for installing the app.</br>We guess it helped.</div>
+    <div class="btnholder">
+    <a class="contBtn" href="https://facebook.com/kabbo.talukderr" target="_blank">CONTACT</a>
+    </div>
+</div>
+
+<div id="map"></div>
+
+<script>
+    var popup, endclose, main1, mainmap;
+    mainmap = document.getElementById('map');
+    main1 = document.getElementById('stateViewer');
+    popup = document.getElementById('end');
+    endclose = document.getElementById('endBtnclose');
+
+    endclose.onclick = function() {
+        popup.style.display = 'none';
+        mainmap.style.filter = 'none';
+        main1.style.filter = 'none';
+    };
+</script>
+
 <script>
     var btn, list, state;
     btn = document.getElementById('distBtn');
@@ -110,6 +153,7 @@
 
     btn.onclick = function() {
         list.style.display = 'flex';
+        state.style.transition = 'none';
         state.style.zIndex = '0';
     };
     listclose.onclick = function() {
@@ -117,6 +161,7 @@
         state.style.zIndex = '10';
     };
 </script>
+
 <script>
     $(".rotate").textrotator({
   animation: "dissolve",
@@ -124,9 +169,13 @@
   speed: 3000
     });
 </script>
-<div id="map"></div>
+
+
+
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyijoyQ2uwlH2YccHq_4-JTkyG8lNXfY8&callback=initMap">
 </script>
+
+
 </body>
 </html>
