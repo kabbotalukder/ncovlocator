@@ -1,9 +1,9 @@
 var nation = 
 {
-    'update' : '22th July, 3:00PM' ,   
-    'cases' : [213254 , 2744],
-    'death' : [2751 , 42],
-    'recovered' : [117204 , 1805],  
+    'update' : '31th July, 11:59PM' ,   
+    'cases' : [237661 , 2772],
+    'death' : [3111 , 28],
+    'recovered' : [135136 , 2176],  
 }
 
 var districts = [
