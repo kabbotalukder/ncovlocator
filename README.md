@@ -7,5 +7,4 @@ An android package (APK) version is also available.
 
 
 
-Kabbo Talukder,
-Developer.
+- Kabbo Talukder, Developer.
