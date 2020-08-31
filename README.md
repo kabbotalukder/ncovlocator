@@ -6,5 +6,4 @@ The site used to get updated every 24 hours corresponding to the reports of IEDC
 An android package (APK) version is also available.
 
 
-
-- Kabbo Talukder, Developer.
+Kabbo Talukder, Developer.
